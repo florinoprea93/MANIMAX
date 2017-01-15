@@ -1,0 +1,793 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 14, 2014, 8:46:49 PM
+    Author     : RAFA_4_EVER
+*/
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+a:active {
+    color: yellow;
+}
+
+
+
+
+ul li {
+    list-style-type: none;
+}
+
+h3 {
+    display: block;
+    font-size: 1em;
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 0.3em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+
+
+body,html {
+    background-image: url('images/bg.jpg');
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+table{
+    border-collapse:collapse;
+    width: 90%;
+}
+
+.blue{
+    border:2px solid #1ABC9C;
+}
+
+.blue thead{
+    background:#1ABC9C;
+}
+
+thead{
+    color:white;
+}
+
+th{
+    text-align:center;
+    padding:5px 0;
+}
+
+td {
+    
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+tbody tr:nth-child(even){
+    background:#ECF0F1;
+}
+
+tbody tr:hover{
+    background:#BDC3C7;
+    color:blue;
+}
+
+
+
+#contul-meu,#add-cart,#main-content{
+    display: block;
+    margin: -120px auto 0 auto;
+    width: 1000px;
+    min-height: 400px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#cont-title {
+    font-family: "Arial";
+    text-indent: 30px;
+    font-weight: normal;
+    font-size: 25px;
+
+}
+
+#modificare-date {
+    display: block;
+    margin: 0px auto;
+    width: 900px;
+    min-height: 100px;
+    padding: 10px;
+    border: darkgray 1px solid;
+}
+
+
+
+#header {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    //background-color: yellow;
+    width: 1200px;
+    border-top: red outset 4px;
+}
+
+#pheader {
+    display: block;
+    background-color: green;
+    width: 1200px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#logo {
+    display: block;
+    float: left;
+    width: 400px;
+    height: 100px;  
+    //background-color: red;
+}
+
+
+#logo img {
+    z-index: -1;
+}
+
+#livrare {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 100px;
+    //background-color: royalblue;
+    text-align: left;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#numar-contact {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 100px;
+    //background-color: blue;
+    text-align: left;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+#numar-contact img {
+    width: 12px;
+}
+
+
+#content {
+    display: block;
+    margin: -145px auto 0 auto;
+    width: 1200px;
+    height: 540px;
+    overflow: hidden;
+    //background-color: white;
+}
+
+#main-page {
+    display: inline-block;
+    float: left;
+    width: 700px;
+    height: 540px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#main-caini {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 180px;
+    //background-color: red;
+    overflow: hidden;
+}
+#h-caini {
+    background-color: red;
+}
+
+#main-pisici {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 180px;
+    //background-color: aquamarine;
+    overflow: hidden;
+}
+
+#h-pisici {
+    background-color: #fe9819;
+}
+
+#main-pasari {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 180px;
+    //background-color: blue;
+    overflow: hidden;
+}
+
+#h-pasari {
+    background-color: #f98aab;
+}
+
+#main-rozatoare {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 180px;
+    //background-color: red;
+    overflow: hidden;
+}
+
+#h-rozatoare {
+    background-color: #905b20;
+}
+
+#main-acvaristica {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 180px;
+    //background-color: red;
+    overflow: hidden;
+}
+
+#h-acvaristica {
+    background-color: #0054b2;
+}
+
+#main-reptile {
+    display: inline-block;
+    float: left;
+    width: 350px;
+    height: 180px;
+    //background-color: blue;
+    overflow: hidden;
+}
+
+#h-reptile {
+    background-color: #2a8100;
+}
+#animax{
+    display: inline-block;
+    margin-left: 10px;
+    float: left;
+    width: 490px;
+    height: 540px;
+    background: linear-gradient( to bottom right,yellowgreen,greenyellow,yellowgreen);
+    background: -webkit-linear-gradient(to bottom right,yellowgreen,greenyellow,yellowgreen);
+    background: -o-linear-gradient(to bottom right,yellowgreen,greenyellow,yellowgreen);
+    background: -moz-linear-gradient(to bottom right,yellowgreen,greenyellow,yellowgreen);
+    overflow: hidden;
+}
+
+#p-caini {
+    display: inline-block;
+    float: left;
+    background-image: url('images/caini.jpg');
+    width: 230px;
+    height: 165px;
+    margin: 10px 5px 5px 10px;
+}
+
+#p-pisici {
+    display: inline-block;
+    float: left;
+    background-image: url('images/pisici.jpg');
+    width: 230px;
+    height: 165px;
+    margin: 10px 10px 5px 5px;
+}
+
+#p-pasari {
+    display: inline-block;
+    float: left;
+    background-image: url('images/pasari.jpg');
+    width: 230px;
+    height: 170px;
+    margin: 5px 5px 5px 10px;
+}
+
+#p-rozatoare {
+    display: inline-block;
+    float: left;
+    background-image: url('images/rozatoare1.jpg');
+    width: 230px;
+    height: 170px;
+    margin: 5px 10px 5px 5px;
+
+}
+
+#p-acvaristica {
+    display: inline-block;
+    float: left;
+    background-image: url('images/acvariu.jpg');
+    width: 230px;
+    height: 165px;
+    margin: 5px 5px 15px 10px
+
+}
+
+#p-reptile {
+    display: inline-block;
+    float: left;
+    background-image: url('images/reptile1.jpg');
+    width: 230px;
+    height: 165px;
+    margin: 5px 10px 10px 5px;
+
+}
+
+#autentificare {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 100px;
+    //background-color: red;
+    text-align: left;
+    font-family: "Arial";
+    font-size: 12px;
+    //font-weight: bold;
+    color: white;
+}
+
+#autentificare img {
+    width: 30px;
+    display: block;
+    float: left;
+}
+
+span{
+    text-align: left;
+    font-family: "Arial";
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+    display: inline-block;
+    float: left;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-top: -1px;
+}
+
+
+
+
+a#link-search {
+    padding: 0px;
+}
+
+
+#pmenu  {
+    display: block;
+    width: 1200px;
+    min-height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+/**********************************************************/
+
+ul#menu {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    -webkit-padding-start: 0px;  
+}
+
+ul#menu ul.sub-menu {
+    display: block;
+    margin: 0 auto;
+    padding: 0px;
+    border-left: grey 1px solid;
+    border-bottom: grey 1px solid;
+    border-right: grey 1px solid;
+}
+
+ul#menu li { 
+    float: left;
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    min-width: 123.859px;
+    height: 40px;
+    background: linear-gradient( to bottom right,yellowgreen,green,yellowgreen);
+    background: -webkit-linear-gradient(to bottom right,yellowgreen,green,yellowgreen);
+    background: -o-linear-gradient(to bottom right,yellowgreen,green,yellowgreen);
+    background: -moz-linear-gradient(to bottom right,yellowgreen,green,yellowgreen);
+    border-right: white solid 3px;
+} 
+
+ul#menu li ul.sub-menu li {
+    float: none;
+    list-style-type: none;
+    border: none;
+    display: block;
+    box-shadow: none;
+    min-width: 200px;
+    height: 25px;
+
+    background: linear-gradient( to bottom right,white,white);
+    background: -webkit-linear-gradient(to bottom right,white,white);
+    background: -o-linear-gradient(to bottom right,white,white);
+    background: -moz-linear-gradient(to bottom right,white,white);
+}
+
+ul#menu li a {
+    text-decoration: none;
+    font-family: "Arial"; 
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    padding: 11px 24px;
+    margin: 0px;
+    font-weight: bold;
+    //border-right: deepskyblue 1px double;
+
+}
+
+ul#menu li ul.sub-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-align: left;
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: normal;
+
+}
+
+ul#menu li ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+}
+
+ul#menu li#cauta {
+    border-right: none;
+    border-bottom-right-radius: 10%;
+}
+
+ul#menu li#acasa {
+    border-bottom-left-radius: 10%;
+}
+ul#menu li:hover ul.sub-menu {
+    display: block;
+    top: 40px; 
+
+}
+
+ul#menu li#acasa:hover {
+    background-image: url('images/acasa.jpg');
+    z-index: 1;
+}
+
+ul#menu li#acasa  a:hover,
+ul#menu li#caini a:hover,
+ul#menu li#pisici a:hover,
+ul#menu li#pasari a:hover,
+ul#menu li#rozatoare a:hover,
+ul#menu li#acvaristica a:hover,
+ul#menu li#reptile a:hover,
+ul#menu li#contact a:hover {
+    opacity: 0;
+
+}
+
+ul#menu li#caini:hover {
+    background-image: url('images/caine.jpg');
+    z-index: 1;
+}
+
+ul#menu li#pisici:hover {
+    background-image: url('images/pisica.jpg');
+    z-index: 1;
+}
+
+ul#menu li#pasari:hover {
+    background-image: url('images/pasare.jpg');
+    z-index: 1;
+}
+
+ul#menu li#rozatoare:hover {
+    background-image: url('images/rozatoare.jpg');
+    z-index: 1;
+}
+
+ul#menu li#acvaristica:hover {
+    background-image: url('images/peste.jpg');
+    z-index: 1;
+}
+
+ul#menu li#reptile:hover {
+    background-image: url('images/reptile.jpg');
+    z-index: 1;
+}
+
+ul#menu li#contact:hover {
+    background-image: url('images/contact.jpg');
+    z-index: 1;
+}
+
+ul#menu li#acasa ul.sub-menu li a:hover,
+ul#menu li#caini ul.sub-menu li a:hover,
+ul#menu li#pisici ul.sub-menu li a:hover,
+ul#menu li#pasari ul.sub-menu li a:hover,
+ul#menu li#rozatoare ul.sub-menu li a:hover,
+ul#menu li#acvaristica ul.sub-menu li a:hover,
+ul#menu li#reptile ul.sub-menu li a:hover{
+    opacity: 1;
+}
+
+
+
+#autentificare-form,#schimbare-parola-form {
+    display: block;
+    margin: auto;
+    background-color: white;
+    width: 300px;
+    height: 150px;
+    border-radius: 3%;
+    border: cornsilk 10px solid;
+}
+
+#signin-form {
+    display: block;
+    margin: -90px auto;
+    background-color: cornsilk;
+    width: 300px;
+    height: 350px;
+    border-radius: 3%;
+    border: white 10px solid;
+}
+
+#update-form {
+    display: block;
+    margin: -100px auto 100px auto;
+    background-color: white;
+    width: 350px;
+    height: 500px;
+    border-radius: 3%;
+    border: cornsilk 10px solid;
+
+}
+
+#edit-form {
+    display: block;
+    margin: 0px auto;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    border-radius: 3%;
+    border: gray 1px solid;
+}
+
+input#input-user,input#input-pass,
+input#input-nume,input#input-prenume,
+input#input-telefon,input#new-pass,
+input#new-pass-conf,input#input-produs,
+input#input-pret,input#input-stoc,
+input#input-unitate,input#input-imagine{
+    color: grey;
+    size: 20px;
+    height: 20px;
+    border-radius: 5%;
+}
+
+textarea#textarea-adresa {
+    color: grey;
+    border-radius: 5%;
+}
+
+textarea#textarea-descriere {
+    color: grey;
+    border-radius: 5%;
+}
+
+
+
+input#input-user:focus,
+input#input-pass:focus,
+input#input-nume:focus,
+input#input-prenume:focus,
+input#input-telefon:focus,
+input#new-pass:focus,
+input#new-pass-conf:focus,
+input#input-produs:focus,
+input#input-pret:focus,
+input#input-stoc:focus,
+input#input-unitate:focus,
+input#input-imagine:focus{
+    background-color: mistyrose;
+    size: 20px;
+    height: 20px;
+    border-radius: 5%;
+}
+
+textarea#textarea-adresa:focus {
+    background-color: mistyrose;
+    border-radius: 5%;
+
+}
+
+textarea#textarea-descriere:focus {
+    background-color: mistyrose;
+    border-radius: 5%;
+
+}
+
+input#input-sub {
+    display: block;
+    margin: 0px auto;
+    height: 20px;
+    border-radius: 0%;
+}
+
+label {
+    font-family: "Arial";
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 10px 30px;
+    top: 50px;
+}
+
+
+#container {
+    display: block;
+    margin: -130px auto;
+    width: 1200px;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+#left-container {
+    display: inline-block;
+    float: left;
+    margin: 0 auto;
+    width: 0px;
+    min-height: 500px;
+    background-color: white;
+}
+
+#right-container {
+    display: block;
+   // float: left;
+    margin: 0px auto;
+    width: 940px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.product {
+    display: inline-block;
+    margin: 15px 0px 15px 12px;
+    width: 170px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.image {
+    display: block;
+    margin: 0px auto 0px auto;
+    width: 130px;
+    height: 130px;
+    border: gray solid 1px;
+}
+.image img {
+    width: 130px;
+    height:130px;
+}
+
+.name-prod {
+    display: block;
+    margin: 0px auto;
+    width: 160px;
+    height: 60px;
+}
+
+.name-prod a {
+    font-family: "Times New Roman";
+    font-weight: bold;
+    color: #2a8100;
+    font-size: 15px;   
+}
+
+.price {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    font-family: "Arial";
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+
+form.form-cart {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 60px;
+}
+
+.input-cart {
+    display: inline-block;
+    margin: 5px;
+    height: 25px;
+    width: 130px;
+    background-color: yellowgreen;
+    border: green solid 1px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.input-cart:active {
+    background-color: green; 
+    border: yellowgreen solid 2px;
+}
+
+
+
+#footer {
+    display: block;
+    margin: 200px auto 0px auto;
+    background-image: url('images/footerbg.png');
+    width: 1200px;
+    height: 260px;
+}
+
+#footer-text {
+    display: block;
+    margin: 0px auto 0px auto;
+    height: 100px;
+    width: 500px;
+
+}
+#footer-text h4 {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+
+////******************************************************************/

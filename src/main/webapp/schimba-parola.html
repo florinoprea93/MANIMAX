@@ -1,0 +1,45 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schimba parola</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div id="contul-meu">
+
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="index.jsp" style="color: black;"><<&nbsp;&nbsp;<u>Prima pagina</u></a>
+            <a href="contulmeu.jsp" style="color: black;"><<&nbsp;&nbsp;<u>Contul meu</u></a>
+            <h1 id="cont-title">Schimba Parola</h1>
+
+            
+            <form method="post" id="schimbare-parola-form" action="schimba-parola.jsp">
+                <label>Parola:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="password" id="new-pass" name="password1" onclick="this.value = '';">
+                </label>
+
+                <label>Confirma:
+                    <input type="password" id="new-pass-conf" name="password2"  onclick="this.value = '';">
+                    <span style="color:red;font-size: 10px;padding: 0px;"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Parolele nu corespund!!!</em></span>
+                </label>
+
+                <input type="submit" id="input-sub" value="Continuati">
+
+            </form>
+
+        </div>
+
+
+
+    </body>
+</html>
