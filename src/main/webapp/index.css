@@ -46,7 +46,7 @@ h3 {
 
 
 body,html {
-    background-image: url('images/bg.jpg');
+    background-image: url('images/bg1.JPG');
     margin: 0px;
     width: 100%;
     height: 100%;
@@ -97,7 +97,7 @@ tbody tr:hover{
     display: block;
     margin: -120px auto 0 auto;
     width: 1000px;
-    min-height: 400px;
+    min-height: 700px;
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
@@ -560,54 +560,39 @@ ul#menu li#reptile ul.sub-menu li a:hover{
 #autentificare-form,#schimbare-parola-form {
     display: block;
     margin: auto;
-    background-color: white;
-    width: 300px;
-    height: 150px;
-    border-radius: 3%;
-    border: cornsilk 10px solid;
+    background-color: #dddbdc;
+    width: 330px;
+    height: 320px;
+    border-radius: 1%;
 }
 
 #signin-form {
     display: block;
     margin: -90px auto;
-    background-color: cornsilk;
-    width: 300px;
-    height: 350px;
-    border-radius: 3%;
-    border: white 10px solid;
+    background-color: #dddbdc;
+    opacity: 0.9;
+    width: 330px;
+    height: 730px;
+    border-radius: 1%;
 }
 
 #update-form {
     display: block;
     margin: -100px auto 100px auto;
-    background-color: white;
+    background-color: #dddbdc;
     width: 350px;
-    height: 500px;
-    border-radius: 3%;
-    border: cornsilk 10px solid;
+    height: 900px;
+    border-radius: 1%;
 
 }
 
 #edit-form {
     display: block;
     margin: 0px auto;
-    background-color: white;
-    width: 300px;
-    height: 250px;
-    border-radius: 3%;
-    border: gray 1px solid;
-}
-
-input#input-user,input#input-pass,
-input#input-nume,input#input-prenume,
-input#input-telefon,input#new-pass,
-input#new-pass-conf,input#input-produs,
-input#input-pret,input#input-stoc,
-input#input-unitate,input#input-imagine{
-    color: grey;
-    size: 20px;
-    height: 20px;
-    border-radius: 5%;
+    background-color: #dddbdc;
+    width: 330px;
+    height: 530px;
+    border-radius: 1%;
 }
 
 textarea#textarea-adresa {
@@ -634,27 +619,21 @@ input#input-pret:focus,
 input#input-stoc:focus,
 input#input-unitate:focus,
 input#input-imagine:focus{
-    background-color: mistyrose;
-    size: 20px;
-    height: 20px;
-    border-radius: 5%;
+    background-color: azure;
 }
 
 textarea#textarea-adresa:focus {
-    background-color: mistyrose;
-    border-radius: 5%;
-
+    background-color: azure;
 }
 
 textarea#textarea-descriere:focus {
-    background-color: mistyrose;
-    border-radius: 5%;
+    background-color: azure;
 
 }
 
 input#input-sub {
     display: block;
-    margin: 0px auto;
+    margin: 10px auto;
     height: 20px;
     border-radius: 0%;
 }
@@ -689,7 +668,7 @@ label {
 
 #right-container {
     display: block;
-   // float: left;
+    float: left;
     margin: 0px auto;
     width: 940px;
     min-height: 500px;
@@ -790,4 +769,4 @@ form.form-cart {
 }
 
 
-////******************************************************************/
+/******************************************************************/

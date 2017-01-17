@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- *
  * @author RAFA_4_EVER
  */
 public class Editare_cont extends HttpServlet {

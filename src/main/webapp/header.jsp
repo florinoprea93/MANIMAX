@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>header</title>
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <script src="index.js"></script>
     </head>
     <body>
@@ -53,20 +54,20 @@
                 <%
                     if (mesaj4.equals("( Delogare )")) {
                         Object username = session.getAttribute("username");
-                        Object admin = "florin_93_vl";
-                        if (username.equals(admin)) {
+                        Object role = session.getAttribute("role");
+                        Object admin = "ADMIN";
+                        if (role.equals(admin)) {
 
                 %>
 
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Admin:&nbsp;</span><span><a href="contulmeu.jsp"><% out.println(username); %></a></span><br>
-                <img src="images/admin.jpg" alt="user"><p>&nbsp;&nbsp;Click  <u><span><a href="Select_list">aici</a></span></u><br></p>
+                <img src="images/admin1.jpg" alt="user"><p>&nbsp;&nbsp;Click  <u><span><a href="Select_list">aici</a></span></u><br></p>
                 ,<p>&nbsp;&nbsp;pentru a updata baza de date.<br><u><span><a href="delogare.jsp"><%out.println(mesaj4);%></a></span></u></p><br><br><br></p><br><br><br>
                 <%
                 } else {
 
                 %>
-
 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Moneda:</span> Lei <br>
                 <img src="images/user.png" alt="user"><p>&nbsp;&nbsp;<%out.println(mesaj1);%> <u><span><a href="contulmeu.jsp"><%out.println(mesaj2);%></a></span></u><br></p>
@@ -253,9 +254,9 @@
                 <li id="contact">
                     <a href="contact.jsp">CONTACT</a>
                 </li>
+
                 <li id="cauta">
                     <!--<a href="search.jsp"></a>-->
-
                     <div id="button-search">
                         <a href="altele.jsp">ALTELE</a>
                     </div>
@@ -263,5 +264,9 @@
                 </li>
             </ul>
         </div>
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
     </body>
 </html>

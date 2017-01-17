@@ -43,7 +43,7 @@
                                    user="root" password="" />
                 <sql:query dataSource="${snapshot}" var="result">
                     SELECT P.nume_p,P.pret_unitar,P.img_url,P.id_p,P.descriere
-                        FROM produs P ,animal A 
+                        FROM produs P ,animal A
                         WHERE (P.id_a = A.id_a)AND(A.categorie_a = 'acvaristica');
                 </sql:query>
 
@@ -63,18 +63,18 @@
                                 <center><c:out value="${row.nume_p}" /></center>
                             </a>
                         </div>
-                            
+
                         <div class="price">
                             <center><c:out value="${row.pret_unitar}"/> Lei</center>
                         </div>
 
-                        
+
                         <form action="add-cart.jsp" name="add-prod-cart" class="form-cart">
                             <center>
                                 <input type="hidden" name="aux" />
                                 <input type="submit" name="<c:out value="${row.id_p}"/>" value="adauga in cos" class="input-cart"
                                        onclick="this.form.aux.value = this.name;" />
-                            </center>                            
+                            </center>
                         </form>
                     </div>
                 </c:forEach>

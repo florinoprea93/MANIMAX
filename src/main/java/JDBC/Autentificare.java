@@ -6,6 +6,7 @@
 package JDBC;
 
 import JDBC.JDBC_Connect;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
@@ -19,7 +20,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 
 /**
- *
  * @author RAFA_4_EVER
  */
 public class Autentificare extends HttpServlet {
@@ -32,9 +32,9 @@ public class Autentificare extends HttpServlet {
         try {
             HttpSession session = request.getSession(true);//creare sesiune
             //HashSet<String> produse = new HashSet<>();
-            HashMap<String,String> produse = new HashMap();
+            HashMap<String, String> produse = new HashMap();
             session.setAttribute("cos", produse);
-            
+
 
             response.setContentType("text/html;charset=UTF-8");
             PrintWriter out = response.getWriter();
@@ -46,17 +46,23 @@ public class Autentificare extends HttpServlet {
             String password = request.getParameter("password");
 
             boolean ok = (f.validate_field(username, "username") && f.validate_field(password, "password"));
-            
+
             if (ok) {
                 String query = "SELECT * FROM client WHERE (username = '" + username + "')AND (password='" + password + "')";
                 ResultSet result = con.execute_query(con, query);
 
                 if (result.first()) {
-                    session.setAttribute("log", 1);
+                    int id_role = result.getInt("id_role");
+                    query = "SELECT * FROM rol WHERE (id_role = '" + id_role + "')";
+                    result = con.execute_query(con, query);
 
                     //trimit prin sesiuni userul si parola in editate_cont pt a putea localiza userul logat
-                    session.setAttribute("username", username);// folosit pt a localiza in Editare_cont  userul logat
-                    session.setAttribute("password", password);//folosit pt a localiza in Editare_cont parola userului logat
+                    if (result.first()) {
+                        session.setAttribute("log", 1);
+                        session.setAttribute("rol", id_role);
+                        session.setAttribute("username", username);// folosit pt a localiza in Editare_cont  userul logat
+                        session.setAttribute("password", password);//folosit pt a localiza in Editare_cont parola userului logat
+                    }
 
                     f.update(session, con, username, password);
 

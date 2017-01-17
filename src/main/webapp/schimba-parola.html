@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,6 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <script src="index.js"></script>
     </head>
     <body>
@@ -23,7 +23,7 @@
             <h1 id="cont-title">Schimba Parola</h1>
 
             
-            <form method="post" id="schimbare-parola-form" action="schimba-parola.jsp">
+<!--            <form method="post" id="schimbare-parola-form" action="schimba-parola.jsp">
                 <label>Parola:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="password" id="new-pass" name="password1" onclick="this.value = '';">
                 </label>
@@ -35,11 +35,38 @@
 
                 <input type="submit" id="input-sub" value="Continuati">
 
+            </form>-->
+
+            <form id="schimbare-parola-form" method="post" action="schimba-parola.jsp">
+
+                <div class="form-group col-md-12 col-lg-offset-0">
+                    <h2 class="col-lg-offset-1">Schimba parola</h2>
+                </div>
+
+                <div class="form-group col-md-12 col-lg-offset-0">
+                    <label for="input-user">Parola:
+                        <input type="password" class="form-control" id="input-user" name="password1"
+                               onclick="this.value='';" maxlength="20">
+                    </label>
+
+                </div>
+                <div class="form-group col-md-12 col-lg-offset-0">
+                    <label for="input-pass">Confirma:
+                        <input type="password" class="form-control" id="input-pass" name="password2"
+                               onclick="this.value='';" maxlength="20"></label>
+
+                </div>
+                <div class="col-md-12 col-lg-offset-0">
+                    <button type="submit" class="btn btn-primary center-block" >Continuati</button>
+                </div>
             </form>
 
         </div>
 
 
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
 
     </body>
 </html>

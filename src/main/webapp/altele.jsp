@@ -30,10 +30,25 @@
             <h1 id="cont-title">Alte detalii:</h1>
             <hr>
 
-            <%                Object username = session.getAttribute("username");
-                Object password = session.getAttribute("password");
+            <%
+                Object username = "";
+                Object password = "";
+                Object role = "";
+                if (session.getAttribute("username") != null) {
+                    username = session.getAttribute("username");
+                }
 
-                if ((username.equals("florin_93_vl")) && (password.equals("florinoprea"))) {
+                if (session.getAttribute("password") != null) {
+                    password = session.getAttribute("password");
+                }
+
+                if (session.getAttribute("role") != null) {
+                    role = session.getAttribute("role");
+                }
+
+                Object admin = "ADMIN";
+
+                if (role.equals(admin)) {
 
             %>
             <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"

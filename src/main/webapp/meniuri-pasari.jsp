@@ -39,7 +39,7 @@
                 <hr>
 
                 <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-                                   url="jdbc:mysql:/localhost/petshop"
+                                   url="jdbc:mysql://localhost/petshop"
                                    user="root" password=""  />
                 <sql:query dataSource="${snapshot}" var="result">
                     SELECT P.nume_p,P.pret_unitar,P.img_url,P.id_p,P.descriere

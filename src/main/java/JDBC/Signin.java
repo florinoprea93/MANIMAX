@@ -26,7 +26,7 @@ public class Signin extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         //Connect to JDBC
-        JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop:$", "root", "");
+        JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop", "root", "");
 
         String surname = request.getParameter("surname");
         String forename = request.getParameter("forename");
@@ -47,8 +47,8 @@ public class Signin extends HttpServlet {
                 
                 if (!result.first()) {
                     
-                    query = "INSERT INTO client (nume_cl,prenume_cl,adresa,telefon,username,password)"
-                            + " VALUES ('" + surname + "','" + forename + "','" + address + "','" + phone + "','" + username + "','" + password + "')";
+                    query = "INSERT INTO client (id_role, nume_cl, prenume_cl, adresa, telefon, username, password)"
+                            + " VALUES ('"+ 2 +"','" + surname + "','" + forename + "','" + address + "','" + phone + "','" + username + "','" + password + "')";
                     int res = con.execute_update(con, query);
                     
                     if (res != 0) {

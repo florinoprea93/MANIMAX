@@ -29,13 +29,15 @@
         <%            
             HashMap<String, String> produse = (HashMap<String, String>) session.getAttribute("cos");
             Object username = session.getAttribute("username");
+            Object role = session.getAttribute("role");
+            Object admin = "ADMIN";
 
             if (session.getAttribute("log") != (Object) 1) {
 
                 String site = "autentificare.jsp";
                 response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
                 response.setHeader("Location", site);
-            } else if (username.equals("florin_93_vl")) {
+            } else if (role.equals(admin)) {
 
                 String site = "delogare.jsp";
                 response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);

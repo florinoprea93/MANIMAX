@@ -36,7 +36,7 @@
 
 
         <sql:setDataSource var="snapshot" driver="com.mysql.jdbc.Driver"
-                           url="jdbc:mysql://$localhost/petshop:$"
+                           url="jdbc:mysql://localhost/petshop"
                                    user="root" password=""  />
 
         <sql:update dataSource="${snapshot}" var="count">

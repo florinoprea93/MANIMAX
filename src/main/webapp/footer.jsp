@@ -14,9 +14,15 @@
         <script src="index.js"></script>
     </head>
     <body>
-        <div id="footer-text">
-            <h4>Telefon: <span style="color: blue;background-color: white;">0722938820</span></h4>.<br>    
-            <h4>Adresa:<span style="color: blue;background-color: white;">Splaiul Independetei,nr 291,Bucuresti,bloc P5,apt 310.</span></h4>
-        </div>
+    <div id="footer-text">
+        <h4>Telefon: <span style="color: #0f0f0f;background-color: white; opacity: 1">0722938820</span></h4>.<br>
+        <h4>Adresa:<span style="color: #0f0f0f;background-color: white; opacity: 1">Splaiul Independetei,nr 291,Bucuresti,bloc P5,apt 310.</span>
+        </h4>
+        <h4>
+            <span style="color: #0f0f0f;background-color: white; opacity: 1">
+                        &copy; Copyright 2017, Oprea Valeriu-Florin
+            </span>
+        </h4>
+    </div>
     </body>
 </html>
