@@ -62,7 +62,7 @@
 
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Admin:&nbsp;</span><span><a href="contulmeu.jsp"><% out.println(username); %></a></span><br>
-                <img src="images/admin1.jpg" alt="user"><p>&nbsp;&nbsp;Click  <u><span><a href="Select_list">aici</a></span></u><br></p>
+                <img src="images/admin1.jpg" alt="user"><p>&nbsp;&nbsp;Click  <u><span><a href="SelectList">aici</a></span></u><br></p>
                 ,<p>&nbsp;&nbsp;pentru a updata baza de date.<br><u><span><a href="delogare.jsp"><%out.println(mesaj4);%></a></span></u></p><br><br><br></p><br><br><br>
                 <%
                 } else {
@@ -255,11 +255,30 @@
                     <a href="contact.jsp">CONTACT</a>
                 </li>
 
-                <li id="cauta">
+<%--                <li id="cauta">
                     <!--<a href="search.jsp"></a>-->
                     <div id="button-search">
                         <a href="altele.jsp">ALTELE</a>
                     </div>
+
+                </li>--%>
+
+                <li id="cauta">
+                    <a href="index.jsp">ALTELE</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="utilizatori.jsp">Utilizatori</a>
+                        </li>
+
+                        <li>
+                            <a href="lista-comenzi.jsp">Comenzi</a>
+                        </li>
+
+                        <li>
+                            <a href="altele.jsp">Statistici</a>
+                        </li>
+
+                    </ul>
 
                 </li>
             </ul>

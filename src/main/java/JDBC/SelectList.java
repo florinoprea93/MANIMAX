@@ -21,7 +21,7 @@ import javax.servlet.http.HttpSession;
 /**
  * @author RAFA_4_EVER
  */
-public class Select_list extends HttpServlet {
+public class SelectList extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -37,7 +37,7 @@ public class Select_list extends HttpServlet {
             response.setContentType("text/html;charset=UTF-8");
             PrintWriter out = response.getWriter();
 
-            JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop", "root", "");
+            JDBCConnect con = new JDBCConnect("jdbc:mysql://localhost/petshop", "root", "");
 
             String query = "SELECT nume_categorie FROM categorie";
             ResultSet result = con.execute_query(con, query);
@@ -62,7 +62,7 @@ public class Select_list extends HttpServlet {
             response.setHeader("Location", site);
 
         } catch (SQLException ex) {
-            Logger.getLogger(Select_list.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SelectList.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

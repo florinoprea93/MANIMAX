@@ -24,7 +24,7 @@ import javax.servlet.http.HttpSession;
 /**
  * @author RAFA_4_EVER
  */
-public class Finalizeaza_comanda extends HttpServlet {
+public class Checkout extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -34,7 +34,7 @@ public class Finalizeaza_comanda extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
-        JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop", "root", "");
+        JDBCConnect con = new JDBCConnect("jdbc:mysql://localhost/petshop", "root", "");
 
         //preiau username-ul si parola contului care a facut comanda
         Object username = session.getAttribute("username");
@@ -103,7 +103,7 @@ public class Finalizeaza_comanda extends HttpServlet {
                     out.print("Click <a href='add-cart-help.jsp'>here</a> to return.");
                 }
             } catch (SQLException ex) {
-                Logger.getLogger(Finalizeaza_comanda.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Checkout.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

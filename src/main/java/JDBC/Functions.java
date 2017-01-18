@@ -7,8 +7,6 @@ package JDBC;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.http.HttpSession;
@@ -27,7 +25,7 @@ public class Functions {
     }
 
 
-    public void update(HttpSession session, JDBC_Connect con, Object username, Object password) {
+    public void update(HttpSession session, JDBCConnect con, Object username, Object password) {
 
         try {
 

@@ -55,7 +55,8 @@ body,html {
 
 table{
     border-collapse:collapse;
-    width: 90%;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
 }
 
 .blue{
@@ -72,7 +73,7 @@ thead{
 
 th{
     text-align:center;
-    padding:5px 0;
+    /*padding:5px 0;*/
 }
 
 td {
@@ -96,7 +97,7 @@ tbody tr:hover{
 #contul-meu,#add-cart,#main-content{
     display: block;
     margin: -120px auto 0 auto;
-    width: 1000px;
+    width: 1200px;
     min-height: 700px;
     overflow: hidden;
     background-color: white;

@@ -5,15 +5,11 @@
  */
 package JDBC;
 
-import JDBC.JDBC_Connect;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.*;
@@ -22,7 +18,7 @@ import javax.servlet.http.*;
 /**
  * @author RAFA_4_EVER
  */
-public class Autentificare extends HttpServlet {
+public class Authenticate extends HttpServlet {
 
     Functions f = new Functions();
 
@@ -40,7 +36,7 @@ public class Autentificare extends HttpServlet {
             PrintWriter out = response.getWriter();
 
             //Connect to JDBC
-            JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop", "root", "");
+            JDBCConnect con = new JDBCConnect("jdbc:mysql://localhost/petshop", "root", "");
 
             String username = request.getParameter("username");
             String password = request.getParameter("password");
@@ -60,8 +56,8 @@ public class Autentificare extends HttpServlet {
                     if (result.first()) {
                         session.setAttribute("log", 1);
                         session.setAttribute("rol", id_role);
-                        session.setAttribute("username", username);// folosit pt a localiza in Editare_cont  userul logat
-                        session.setAttribute("password", password);//folosit pt a localiza in Editare_cont parola userului logat
+                        session.setAttribute("username", username);// folosit pt a localiza in EditAccount  userul logat
+                        session.setAttribute("password", password);//folosit pt a localiza in EditAccount parola userului logat
                     }
 
                     f.update(session, con, username, password);
@@ -81,7 +77,7 @@ public class Autentificare extends HttpServlet {
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(Autentificare.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Authenticate.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }

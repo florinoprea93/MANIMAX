@@ -18,7 +18,7 @@
 
         <div id="add-produs">
 
-            <form method="get" id="update-form" action="Update_db">
+            <form method="get" id="update-form" action="UpdateDatabase">
 
                 <div class="form-group col-md-12 col-md-offset-0">
                     <h2 class="col-lg-offset-2">Adauga produs</h2>

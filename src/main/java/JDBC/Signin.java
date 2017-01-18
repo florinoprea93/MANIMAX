@@ -2,10 +2,7 @@ package JDBC;
 
 import java.lang.*;
 import java.io.*;
-import javax.servlet.Servlet.*;
 import javax.servlet.http.*;
-import JDBC.JDBC_Connect;
-import static java.lang.System.out;
 import java.sql.*;
 import java.util.logging.*;
 import javax.servlet.*;
@@ -26,7 +23,7 @@ public class Signin extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         //Connect to JDBC
-        JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop", "root", "");
+        JDBCConnect con = new JDBCConnect("jdbc:mysql://localhost/petshop", "root", "");
 
         String surname = request.getParameter("surname");
         String forename = request.getParameter("forename");

@@ -136,7 +136,7 @@
 
                                 </td>
                                 <td>
-                                    <form action="Adauga_prod" class="form-cart" method="post">
+                                    <form action="AddProduct" class="form-cart" method="post">
 
                                         <input type="text" name="cant-prod"
                                                value="<%
@@ -196,13 +196,13 @@
                     <input type="submit" value="continua" class="input-cart">
                 </a>
 
-                <a href="Finalizeaza_comanda">
+                <a href="Checkout">
                     <input type="submit" value="comanda" class="input-cart">
                 </a>
 
 
                 <fmt:formatNumber var="total" value="${total - 0.0000000005}" maxFractionDigits="2"/>
-                <span style="color:black;font-weight: bold;font-size: 16px;float: right;margin-right: 25px">Pret comanda:
+                <span style="color:black;font-weight: bold;font-size: 16px;float: right;margin-right: 200px">Pret comanda:
                     <input type="text" value="<c:out value="${total}"/>" size="7" id="input-pass" disabled
                            style="color: red;font-weight: bold;"> Lei
                 </span>

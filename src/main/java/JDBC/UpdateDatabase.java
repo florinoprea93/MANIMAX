@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
@@ -22,7 +20,7 @@ import javax.servlet.http.HttpSession;
 /**
  * @author RAFA_4_EVER
  */
-public class Update_db extends HttpServlet {
+public class UpdateDatabase extends HttpServlet {
 
     Functions f = new Functions();
 
@@ -52,7 +50,7 @@ public class Update_db extends HttpServlet {
         if (ok) {
 
             try {
-                JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop", "root", "");
+                JDBCConnect con = new JDBCConnect("jdbc:mysql://localhost/petshop", "root", "");
 
                 String query = "SELECT id_a FROM animal WHERE nume_a='" + animal + "'";
                 ResultSet result = con.execute_query(con, query);
@@ -76,7 +74,7 @@ public class Update_db extends HttpServlet {
                 }
 
             } catch (SQLException ex) {
-                Logger.getLogger(Update_db.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(UpdateDatabase.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }

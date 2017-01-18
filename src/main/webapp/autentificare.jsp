@@ -19,7 +19,7 @@
             <%@include file="header.jsp" %>
         </div>
 
-        <form id="autentificare-form" method="post" action="Autentificare">
+        <form id="autentificare-form" method="post" action="Authenticate">
 
             <div class="form-group col-md-12 col-lg-offset-0">
                 <h2 class="col-lg-offset-3">Autentificare</h2>

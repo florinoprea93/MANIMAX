@@ -24,7 +24,7 @@ import javax.servlet.http.HttpSession;
 /**
  * @author RAFA_4_EVER
  */
-public class Adauga_prod extends HttpServlet {
+public class AddProduct extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -52,7 +52,7 @@ public class Adauga_prod extends HttpServlet {
                 if ((me.getKey().toString()).equals(id)) {
 
                     try {
-                        JDBC_Connect con = new JDBC_Connect("jdbc:mysql://localhost/petshop", "root", "");
+                        JDBCConnect con = new JDBCConnect("jdbc:mysql://localhost/petshop", "root", "");
                         String query = "SELECT stoc FROM produs WHERE id_p = '" + id + "'";
                         ResultSet result = con.execute_query(con, query);
                         result.first();
@@ -66,7 +66,7 @@ public class Adauga_prod extends HttpServlet {
                         }
 
                     } catch (SQLException ex) {
-                        Logger.getLogger(Adauga_prod.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(AddProduct.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
             }

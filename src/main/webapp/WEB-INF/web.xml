@@ -5,64 +5,84 @@
         <servlet-class>JDBC.Signin</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Autentificare</servlet-name>
-        <servlet-class>JDBC.Autentificare</servlet-class>
+        <servlet-name>Authenticate</servlet-name>
+        <servlet-class>JDBC.Authenticate</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Editare_cont</servlet-name>
-        <servlet-class>JDBC.Editare_cont</servlet-class>
+        <servlet-name>EditAccount</servlet-name>
+        <servlet-class>JDBC.EditAccount</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Update_db</servlet-name>
-        <servlet-class>JDBC.Update_db</servlet-class>
+        <servlet-name>UpdateDatabase</servlet-name>
+        <servlet-class>JDBC.UpdateDatabase</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Select_list</servlet-name>
-        <servlet-class>JDBC.Select_list</servlet-class>
+        <servlet-name>SelectList</servlet-name>
+        <servlet-class>JDBC.SelectList</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Adauga_prod</servlet-name>
-        <servlet-class>JDBC.Adauga_prod</servlet-class>
+        <servlet-name>AddProduct</servlet-name>
+        <servlet-class>JDBC.AddProduct</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Finalizeaza_comanda</servlet-name>
-        <servlet-class>JDBC.Finalizeaza_comanda</servlet-class>
+        <servlet-name>Checkout</servlet-name>
+        <servlet-class>JDBC.Checkout</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Sterge_comenzi</servlet-name>
-        <servlet-class>JDBC.Sterge_comenzi</servlet-class>
+        <servlet-name>DeleteOrders</servlet-name>
+        <servlet-class>JDBC.DeleteOrders</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DeleteUser</servlet-name>
+        <servlet-class>JDBC.DeleteUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserDetails</servlet-name>
+        <servlet-class>JDBC.UserDetails</servlet-class>
+    </servlet>
+
+    UserDetails
     <servlet-mapping>
         <servlet-name>Signin</servlet-name>
         <url-pattern>/Signin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Autentificare</servlet-name>
-        <url-pattern>/Autentificare</url-pattern>
+        <servlet-name>Authenticate</servlet-name>
+        <url-pattern>/Authenticate</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Editare_cont</servlet-name>
-        <url-pattern>/Editare_cont</url-pattern>
+        <servlet-name>EditAccount</servlet-name>
+        <url-pattern>/EditAccount</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Update_db</servlet-name>
-        <url-pattern>/Update_db</url-pattern>
+        <servlet-name>UpdateDatabase</servlet-name>
+        <url-pattern>/UpdateDatabase</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Select_list</servlet-name>
-        <url-pattern>/Select_list</url-pattern>
+        <servlet-name>SelectList</servlet-name>
+        <url-pattern>/SelectList</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Adauga_prod</servlet-name>
-        <url-pattern>/Adauga_prod</url-pattern>
+        <servlet-name>AddProduct</servlet-name>
+        <url-pattern>/AddProduct</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Finalizeaza_comanda</servlet-name>
-        <url-pattern>/Finalizeaza_comanda</url-pattern>
+        <servlet-name>Checkout</servlet-name>
+        <url-pattern>/Checkout</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Sterge_comenzi</servlet-name>
-        <url-pattern>/Sterge_comenzi</url-pattern>
+        <servlet-name>DeleteOrders</servlet-name>
+        <url-pattern>/DeleteOrders</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteUser</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserDetails</servlet-name>
+        <url-pattern>/UserDetails</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
